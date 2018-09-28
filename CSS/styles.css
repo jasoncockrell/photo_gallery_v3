@@ -5,6 +5,9 @@ body{max-width:1280px;
   padding-right: 5%;
   padding-left: 5%; }
 
+[data-title]{font-weight: normal;
+              font-family: sans-serif;}
+
 .wrap{width: 100%;
   margin:0 auto;}
 
@@ -21,6 +24,8 @@ margin:0 auto;}
   font-size: 16pt;
   padding: 2%;
   border-radius: 3px}
+
+
 
 /*--Photo Gallery--*/
 
