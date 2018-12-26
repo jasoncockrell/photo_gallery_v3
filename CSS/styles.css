@@ -1,25 +1,25 @@
 /*--MAIN CSS--*/
 
-body{max-width:1280px;
-  padding-top:3%;
-  padding-right: 5%;
-  padding-left: 5%; }
+body{width:100%;}
 
-[data-title]{font-weight: normal;
-              font-family: sans-serif;}
+flexWrap{display:flex;
+    direction: column;
+    align-items: center;
+    justify-content: center;}
 
 p{visibility: hidden;}
 
 ul{list-style: none;
-   display: flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     margin-top:5%;
-    justify-content: space-around;}
+align-items: center;}
 
-li{padding-right: 2em;}
+li{padding-right:0em;}
 
-.wrap{width: 100%;
-  margin:0 auto;}
+ img{width:100%;
+  height:auto;}
+
 
 /*--Searchbox--*/
 
@@ -27,7 +27,7 @@ li{padding-right: 2em;}
 margin:0 auto;}
 
 .sbox{
-  width:50%; margin:0 auto;
+  width:70%; margin:0 auto;
   align-self: center;}
 
 .search1{width:100%;
@@ -35,30 +35,55 @@ margin:0 auto;}
   padding: 2%;
   border-radius: 3px;}
 
-/*--Desktop Display--*/
+/*--iPad--*/
 
-.deskTop{display:initial;}
+@media only screen and (min-width: 768px) {
 
-.tablet{display:none;}
+    flexWrap{display:flex;
+        direction: row;}
 
-@media only screen and (max-width: 768px){
+    ul{list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top:5%;
+    justify-content: space-around;}
 
-  .deskTop{display:none;}
+li{padding-right: 2em;}
 
-  .tablet{margin-top: 2%;
-    display:initial;}
+.sbox{
+  width:50%; margin:0 auto;
+  align-self: center;}
 
-  ul{list-style: none;
-     display: flex;
-      flex-direction: column;
-      margin-top:5%;
-      justify-content: space-around;}
 
-  #tabRow1{float:left;;}
 
-  #tabRow2{float:right;}
+  img{width:100%;
+  height:auto;}
 
-  img{width:120%;
+}
+
+/*--Desktop--*/
+
+@media only screen and (min-width: 960px) {
+
+    flexWrap{display:flex;
+        direction: row;}
+
+    ul{list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top:5%;
+    justify-content: space-around;}
+
+li{padding-right: 2em;}
+
+
+.sbox{
+  width:50%; margin:0 auto;
+  align-self: center;}
+
+
+
+img{width:120%;
   height:auto;}
 
 }
